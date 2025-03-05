@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             arial-label="Gmail"
           >
-            <img src="./src/assets/icon_gmail.png" alt="Gmail icon" />
+            <img src="/src/assets/icon_gmail.png" alt="Gmail icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/kevinesg"
@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <img src="./src/assets/icon_linkedin.png" alt="LinkedIn icon" />
+            <img src="/src/assets/icon_linkedin.png" alt="LinkedIn icon" />
           </a>
           <a
             href="https://github.com/kevinesg"
@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            <img src="./src/assets/icon_github.png" alt="GitHub Icon" />
+            <img src="/src/assets/icon_github.png" alt="GitHub Icon" />
           </a>
         </div>
       </section>
@@ -57,10 +57,10 @@ const Contact: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./src/assets/icon_paypal.svg" alt="PayPal icon" />
+            <img src="/src/assets/icon_paypal.svg" alt="PayPal icon" />
           </a>
           <div className="qr-code">
-            <img src="./src/assets/icon_instapay.png" alt="InstaPay QR Code" />
+            <img src="/src/assets/icon_instapay.png" alt="InstaPay QR Code" />
           </div>
         </div>
       </section>

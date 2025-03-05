@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${showNavbar ? "show" : "hide"}`}>
       <div className="navbar-top-layer">
         <Link to="/" className="navbar-icon">
-          <img src="./src/assets/icon_mb.svg" alt="Home Icon" />
+          <img src="/src/assets/icon_mb.svg" alt="Home Icon" />
         </Link>
         <Link to="/" className="navbar-brand">
           Magandang Balita
