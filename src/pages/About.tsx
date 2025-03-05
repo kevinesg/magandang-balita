@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/About.css";
+import techStack from "../assets/tech_stack.png";
 
 const About: React.FC = () => {
   return (
@@ -16,11 +17,7 @@ const About: React.FC = () => {
       <br />
       <section className="about-tech">
         <h2>Technology Used</h2>
-        <img
-          src="/src/assets/tech_stack.png"
-          alt="Tech Stack"
-          className="tech-stack-img"
-        />
+        <img src={techStack} alt="Tech Stack" className="tech-stack-img" />
       </section>
     </div>
   );

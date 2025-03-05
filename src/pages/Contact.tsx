@@ -1,5 +1,10 @@
 import React from "react";
 import "./css/Contact.css";
+import iconGmail from "../assets/icon_gmail.png";
+import iconLinkedIn from "../assets/icon_linkedin.png";
+import iconGitHub from "../assets/icon_github.png";
+import iconPayPal from "../assets/icon_paypal.svg";
+import iconInstapay from "../assets/icon_instapay.png";
 
 const Contact: React.FC = () => {
   return (
@@ -25,7 +30,7 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             arial-label="Gmail"
           >
-            <img src="/src/assets/icon_gmail.png" alt="Gmail icon" />
+            <img src={iconGmail} alt="Gmail icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/kevinesg"
@@ -33,7 +38,7 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <img src="/src/assets/icon_linkedin.png" alt="LinkedIn icon" />
+            <img src={iconLinkedIn} alt="LinkedIn icon" />
           </a>
           <a
             href="https://github.com/kevinesg"
@@ -41,7 +46,7 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            <img src="/src/assets/icon_github.png" alt="GitHub Icon" />
+            <img src={iconGitHub} alt="GitHub Icon" />
           </a>
         </div>
       </section>
@@ -57,10 +62,10 @@ const Contact: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/src/assets/icon_paypal.svg" alt="PayPal icon" />
+            <img src={iconPayPal} alt="PayPal icon" />
           </a>
           <div className="qr-code">
-            <img src="/src/assets/icon_instapay.png" alt="InstaPay QR Code" />
+            <img src={iconInstapay} alt="InstaPay QR Code" />
           </div>
         </div>
       </section>
