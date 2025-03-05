@@ -1,14 +1,18 @@
-const { Storage } = require('@google-cloud/storage');
-const fs = require('fs');
-const path = require('path');
+import { Storage } from '@google-cloud/storage';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Convert __filename and __dirname to work with ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 async function downloadData() {
   // Configure your GCS client; credentials can be provided via environment variables
   const storage = new Storage({
-    projectId: import.meta.env.VITE_GCLOUD_PROJECT,
-    keyFilename: import.meta.env.VITE_GCLOUD_KEYFILE,
+    projectId: process.env.VITE_GCLOUD_PROJECT,
+    keyFilename: process.env.VITE_GCLOUD_KEYFILE,
   });
-  const bucketName = import.meta.env.VITE_GCLOUD_BUCKET;
+  const bucketName = process.env.VITE_GCLOUD_BUCKET;
   const srcFilename = 'article_data.json';
   const destPath = path.join(__dirname, 'data', 'content.json');
 
