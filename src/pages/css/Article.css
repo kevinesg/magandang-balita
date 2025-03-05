@@ -1,0 +1,124 @@
+.container {
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.article-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.article-card:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
+.card-body {
+  background-color: inherit; /* Inherit background color from parent */
+  transition: none; /* Remove hover animation */
+}
+
+.article-img {
+  width: 100%;
+  max-width: 800px; /* Set a maximum width */
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+  object-fit: cover;
+  margin: 0 auto; /* Center the image */
+  display: block; /* Center the image */
+}
+
+.article-content {
+  margin-top: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article-content p {
+  margin-bottom: 1.5em; /* Add space between paragraphs */
+}
+
+.article-source,
+.article-author,
+.article-reference {
+  font-size: 0.9rem; /* 14px */
+  color: #777;
+  margin-top: 10px;
+}
+
+.article-reference a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.article-reference a:hover {
+  text-decoration: underline;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-width: 800px;
+  margin: 20px auto 0; /* Add space between article content and buttons */
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #000; /* Black font color */
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+  background-color: #d0d0d0; /* Darker gray on hover */
+}
+
+.previous {
+  margin-right: auto;
+}
+
+.next {
+  margin-left: auto;
+}
+
+.previous::before {
+  content: "← "; /* Add arrow before Previous */
+}
+
+.next::after {
+  content: " →"; /* Add arrow after Next */
+}
+
+.article-header {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-source {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #999; /* Faded gray color */
+  font-size: 0.8rem; /* Slightly smaller font */
+}
+
+.article-content {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for design */
+}
+
+.article-text {
+  text-indent: 4em;
+  text-align: justify;
+}

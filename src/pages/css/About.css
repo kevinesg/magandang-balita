@@ -1,0 +1,47 @@
+.about-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 120px;
+  }
+  
+  .about-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-page section {
+    margin-bottom: 40px; /* Add more space between sections */
+  }
+  
+  .about-page h2 {
+    margin-top: 20px;
+    margin-bottom: 10px; /* Add space below subheadings */
+  }
+  
+  .about-page p {
+    line-height: 1.6;
+  }
+  
+  .contact-icons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    justify-content: center; /* Center the icons */
+  }
+  
+  .contact-icons a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-icons a:hover {
+    color: #0056b3; /* Change color on hover */
+  }
+  
+  .tech-stack-img {
+    width: 100%;
+    max-width: 900px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Center the image */
+  }

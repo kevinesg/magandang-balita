@@ -1,0 +1,14 @@
+.latest-article-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  padding-top: 120px;
+}
+
+.card-collection-container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px; /* Optional: Add some padding for better appearance */
+  }
