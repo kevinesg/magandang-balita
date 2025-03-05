@@ -17,7 +17,7 @@ const About: React.FC = () => {
       <section className="about-tech">
         <h2>Technology Used</h2>
         <img
-          src="./src/assets/tech_stack.png"
+          src="/src/assets/tech_stack.png"
           alt="Tech Stack"
           className="tech-stack-img"
         />
