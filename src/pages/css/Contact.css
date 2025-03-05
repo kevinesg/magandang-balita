@@ -1,0 +1,63 @@
+.contact-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 120px;
+  }
+  
+  .contact-page h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-page p {
+    line-height: 1.6;
+  }
+  
+  .contact-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .contact-icons a {
+    color: #007bff;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-icons a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .contact-icons img {
+    max-width: 40px; /* Set a maximum width for the icons */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .donate-links {
+    display: flex;
+    gap: 20px; /* Space between the icons */
+    justify-content: center; /* Center the icons */
+  }
+  
+  .donate-links a img {
+    max-width: 90px; /* Set a maximum width for the PayPal icon */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s ease;
+  }
+  
+  .qr-code img {
+    max-width: 120px; /* Set a maximum width for the QR code */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s ease;
+  }
+  
+  .donate-links a:hover img,
+  .qr-code:hover img {
+    transform: scale(1.1);
+  }
