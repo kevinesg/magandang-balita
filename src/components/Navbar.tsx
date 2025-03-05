@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./css/Navbar.css";
+import iconMB from "../assets/icon_mb.svg";
 
 const Navbar: React.FC = () => {
   const [showNavbar, setShowNavbar] = React.useState(true);
@@ -27,7 +28,7 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${showNavbar ? "show" : "hide"}`}>
       <div className="navbar-top-layer">
         <Link to="/" className="navbar-icon">
-          <img src="/src/assets/icon_mb.svg" alt="Home Icon" />
+          <img src={iconMB} alt="Home Icon" />
         </Link>
         <Link to="/" className="navbar-brand">
           Magandang Balita
