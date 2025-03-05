@@ -6,11 +6,14 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Parse the service account key from the environment variable
+const serviceAccountKey = JSON.parse(process.env.VITE_GCLOUD_KEYFILE);
+
 async function downloadData() {
   // Configure your GCS client; credentials can be provided via environment variables
   const storage = new Storage({
     projectId: process.env.VITE_GCLOUD_PROJECT,
-    keyFilename: process.env.VITE_GCLOUD_KEYFILE,
+    credentials: serviceAccountKey,
   });
   const bucketName = process.env.VITE_GCLOUD_BUCKET;
   const srcFilename = 'article_data.json';
