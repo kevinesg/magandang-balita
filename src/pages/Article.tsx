@@ -40,11 +40,17 @@ const Article: React.FC = () => {
                 <h1 className="mb-4">{articleData.title}</h1>
                 <p className="text-muted">Posted on: {articleData.posted_at}</p>
               </div>
-              <img
-                src={articleData.image_url || ""}
-                className="img-fluid mb-4 article-img"
-                alt={articleData.title}
-              />
+              <a
+                href={articleData.image_url || ""}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={articleData.image_url || ""}
+                  className="img-fluid mb-4 article-img"
+                  alt={articleData.title}
+                />
+              </a>
               <p className="image-source">📷 Source: {articleData.source}</p>
               <div className="article-content">
                 <div className="article-text">
