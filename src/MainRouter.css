@@ -1,0 +1,52 @@
+:root {
+    --padding-top: 20px; /* padding for navbar */
+    --footer-height: 160px;
+    --container-min-height: calc(100vh - var(--padding-top) - var(--footer-height));
+}
+
+* {
+    font-family: "Ubuntu";
+}
+
+.main-div {
+    width: 100%; /* Takes full width on small screens */
+    padding-top: var(--padding-top);
+    border: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-background);
+    border-bottom: 1px solid var(--color-background);
+  }
+
+
+
+/* Footer styles */
+.footer {
+    display: flex;
+    justify-content: space-between; /* Pushes content to opposite ends */
+    padding-top: 100px;
+    align-items: center; /* Vertically centers the content */
+    height: var(--footer-height);
+    background-color: var(--color-background);
+  }
+  
+  .footer-left {
+    /* Styles for left content */
+    justify-content: flex-start;
+  }
+  
+  .footer-right {
+    /* Styles for right content */
+    display: flex;
+    gap: 20px; /* Space between links */
+  }
+  
+  .footer-right a {
+    text-decoration: none; /* Optional: removes underline from links */
+  }
+
+  a {
+    color: inherit; /* Inherit color from parent */
+  }
+  
+  a:hover {
+    color: var(--color-primary);
+  }
